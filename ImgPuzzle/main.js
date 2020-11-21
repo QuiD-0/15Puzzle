@@ -24,7 +24,7 @@ function start(){
     {
       puzzleArr[i] = new Array(col);
     }
-    //배열에 위치에 따른 이미지 넣기 
+    //배열에 위치에 따라 이미지 넣기 
     var imgwidth=Math.floor(500/col);
     var imgheight=Math.floor(300/row);
     count=1;
@@ -69,7 +69,7 @@ function printPuzzle(){
         ouput += "<td class=\"square\" style=\"opacity:0;\"> </td>";
       }
       else
-      {    
+      { 
         ouput += "<td class=\"square\" style=\" width: "+(imgwidth-3)+"px; height:"+(imgheight-3)+"px; left:"+imgwidth*j+"px; top: "+imgheight*i+"px;\" onclick=\"moveBlock(" +i+ ","+j+")\" >" + puzzleArr[i][j] + "</td>";
       }
     } 
@@ -83,9 +83,6 @@ function moveBlock(clickRow,clickCol){
   if (moveCheck(clickRow,clickCol)){
       //클릭 횟수 증가
       countIncrease();
-  }
-  else{
-      //반짝이기
   }
 }
 //이동 가능 확인을 위한 함수
@@ -134,7 +131,7 @@ function moveCheck(clickRow,clickCol){
 //클릭 횟수 증가를 위한 함수
 function countIncrease(){
   move++;
-  if (counter) // This is nessessary.
+  if (counter) 
   {
     counter.innerHTML = move;
   }

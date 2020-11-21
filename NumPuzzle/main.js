@@ -72,6 +72,7 @@ function moveBlock(clickRow, clickCol) {
         //클릭 횟수 증가
         countIncrease();
     } else {
+        //움직일수 없을경우 배경색 바꾸기
         document.getElementsByTagName("tr")[clickRow].children[clickCol].style.backgroundColor = "coral";
     }
 }
@@ -121,7 +122,7 @@ function moveCheck(clickRow, clickCol) {
 //클릭 횟수 증가를 위한 함수
 function countIncrease() {
     move++;
-    if (counter) // This is nessessary.
+    if (counter)
     {
         counter.innerHTML = move;
     }
