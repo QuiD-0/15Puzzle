@@ -1,0 +1,41 @@
+#table {
+    width: 426px;
+    height: 100%;
+    margin: 30px auto;
+    display: block;
+}
+
+tbody {
+    margin: 0px auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #d9e6e9;
+}
+
+td:hover {
+    background-color: #4d77b2;
+}
+
+.container {
+    text-align: center;
+}
+
+td.zero {
+    background-color: white;
+    border: 0px;
+}
+
+input {
+    width: 30px;
+    margin: 0px 20px;
+}
+
+input#start {
+    width: 50px;
+}

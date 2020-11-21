@@ -1,0 +1,31 @@
+.square{
+    overflow:hidden;
+    border:1px solid #FFF;
+    position:absolute;
+}
+.puzzle{
+    width: 500px;
+    height: 400px;
+    margin: 50px auto;
+    display: block;
+
+}
+#table{
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+    display: block;
+    position: absolute;
+}
+img{
+    position: absolute; 
+}
+.container{
+    text-align: center;
+}
+input{
+    width: 30px;
+}
+input#start{
+    width: 50px;
+}
